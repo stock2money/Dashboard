@@ -14,6 +14,8 @@
   ]
   ```
 
+  向微信服务器获取**openid**和**session_key**
+
   Response 返回信息
 
   ```
@@ -47,6 +49,30 @@
       StockID: string
   ]
   ```
+
+# 咨询信息
+* 分页获取咨询信息 - `get`
+  ```
+  api/news
+  ```
+
+* 信息来源：今日经济类新闻
+
+* Resonse
+
+  ```
+  [
+  	[
+  		title: string
+  		time: string
+  		detail: string
+  	],
+  	...
+  
+  ]
+  ```
+
+  
 
 # 信息获取
 
