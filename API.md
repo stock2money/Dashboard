@@ -20,8 +20,9 @@
 
   ```
   [
-  	token: "聚宽的token"
-  	openid：用户唯一标识	
+  	token: string 聚宽的token
+  	openid：string 用户唯一标识	
+  	msg: string 报错信息
   ]
   ```
 
