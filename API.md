@@ -49,11 +49,12 @@
 
   ```
   [
-    user: string userid
+    userId: string userid
     stocks: [
       code string 股票代码,
       ......
     ]
+    msg: string 报错信息
   ]
   ```
 
@@ -80,6 +81,7 @@
       code string 股票代码,
       ......
     ]
+    msg: string 报错信息
   ]
   ```
   
@@ -103,7 +105,8 @@
   ```
   [
     userId: string 用户唯一标识
-    status: bool 是否成功
+    status: bool 是否成功认证
+    msg: string 报错信息
   ]
   ```
 
@@ -122,6 +125,7 @@
   [
     from: int 起始 
     to:   int 结束
+    msg:  string 报错信息
     data：[
       [
         title: string
