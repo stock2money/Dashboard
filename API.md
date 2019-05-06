@@ -62,18 +62,22 @@
   ```
   增加：api/stocks/add
   删除：api/stocks/remove 
-```
+  ```
   
-`Request` -  `application/json`
+  `Request` -  `application/json` 
   
   ```
   [
   	userId: string 用户唯一标识
-      stockCode: string 股票代码
+    stockCode: string 股票代码
   ]
   ```
   
+  
+  
   `Response:`
+  
+  
   
   ```
   [
