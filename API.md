@@ -2,7 +2,7 @@
 
 
 
-## 个人信息相关
+## 用户相关
 
 * 登陆 - `post`
 
@@ -14,7 +14,7 @@
 
   ```
   [
-  	code: string 登录时获取的code
+    code: string 登录时获取的code
   ]
   ```
 
@@ -24,14 +24,14 @@
 
   ```
   [
-  	token: string 聚宽的token
-  	openid：string 用户唯一标识
-  	isVip: bool 是否是VIP
-  	msg: string 报错信息
-  	stocks: [
-  		code string 股票代码,
-  		......
-  	] json 用户收藏的股票
+    token: string 聚宽的token
+    openid：string 用户唯一标识
+    isVip: bool 是否是VIP
+    msg: string 报错信息
+    stocks: [
+      code string 股票代码,
+      ......
+    ] json 用户收藏的股票
   ]
   ```
 
@@ -49,11 +49,11 @@
 
   ```
   [
-  	user: string userid
-  	stocks: [
-  		code string 股票代码,
-  		......
-  	]
+    user: string userid
+    stocks: [
+      code string 股票代码,
+      ......
+    ]
   ]
   ```
 
@@ -68,24 +68,18 @@
   
   ```
   [
-  	userId: string 用户唯一标识
+    userId: string 用户唯一标识
     stockCode: string 股票代码
   ]
   ```
-  
-  
-  
   `Response:`
-  
-  
-  
   ```
   [
-  	userId: string 用户唯一标识
-  	stocks: [
-  		code string 股票代码,
-  		......
-  	]
+    userId: string 用户唯一标识
+    stocks: [
+      code string 股票代码,
+      ......
+    ]
   ]
   ```
   
@@ -99,8 +93,8 @@
 
   ```
   [
-  	userId: string 用户唯一标识
-      vipCode: string vip校验码
+    userId: string 用户唯一标识
+    vipCode: string vip校验码
   ]
   ```
 
@@ -108,8 +102,8 @@
 
   ```
   [
-  	userId: string 用户唯一标识
-  	status: bool 是否成功
+    userId: string 用户唯一标识
+    status: bool 是否成功
   ]
   ```
 
@@ -126,17 +120,16 @@
 
   ```
   [
-  	from: int 起始 
-  	to:   int 结束
-  	data：[
-  		[
-  			title: string
-  			time: string
-  			detail: string
-  		],
-  		...
-	]
-  
+    from: int 起始 
+    to:   int 结束
+    data：[
+      [
+        title: string
+        time: string
+        detail: string
+      ],
+      ...
+    ]
   ]
   ```
   
