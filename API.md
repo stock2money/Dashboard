@@ -110,43 +110,46 @@
   ]
   ```
 
-* 智能选股信息获取 -  `get`
+* 智能选股信息获取 -  `post`
   > vip用户专享
   ```
   api/stocks/recommend
   ```
-
-  `Response`
+  `Request`  -  `application/json`
 
   ```
   [
-    stocks: [
-      {
-        last_close    string  昨收
-        today_open    string  今开
-        last_price    string  最新价
-        change        string  变动
-        change_rate   string  变动比例
-        code          string  股票代码
-        date          string  日期
-        name          string  股票名称
-        strategy      string  策略名称
-      },
-      ......
-    ] 今日智能推荐的股票
-    strategys: [
-      {
-        strategy      string  策略名称
-        successRate   int     综合成功率
-        operation     string  操作类型
-        usage         string  核心用法
-      }
-      ......
-    ] 策略的介绍及成功率
+    userId: string 用户唯一标识
+  ]
+  ```
+  `Response`
+  ```
+  [
+    data: {
+      strategy: {
+        successRate:  int     综合成功率
+        operation:    string  操作类型
+        usage:        string  核心用法
+        stocks: [
+          {
+            last_close    string  昨收
+            today_open    string  今开
+            last_price    string  最新价
+            change        string  变动
+            change_rate   string  变动比例
+            code          string  股票代码
+            date          string  日期
+            name          string  股票名称
+            strategy      string  策略名称
+          },
+          ......
+        ] 策略智能推荐的股票
+      } 策略,
+      ...
+    }
     msg: string 报错信息
   ]
   ```
-  
 
 
 
